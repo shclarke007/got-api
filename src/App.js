@@ -10,6 +10,17 @@ class App extends Component {
       isLoaded:false,
     }
   }
+
+  componentDidMount(){
+    fetch('https://www.anapioficeandfire.com/api/houses')
+    .then(res =>res.json())
+    .then(json => {
+      this.setState({
+        isLoaded:true,
+        items:json,
+      })
+    });
+  }
   
   render() {
     return (
