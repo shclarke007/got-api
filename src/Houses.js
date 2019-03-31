@@ -33,8 +33,8 @@ class Houses extends Component {
     } else {
       return (
         <div className="app">
-          <HousesHeader />
-          <HousesList houses={houses} />
+          <header className="cardsHeader"><HousesHeader /></header>
+          <div className="cardsContainer"><HousesList houses={houses} /></div>
         </div>
       );
     }

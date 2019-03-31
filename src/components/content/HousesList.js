@@ -3,21 +3,21 @@ import React from "react";
 const HousesList = ({ houses }) => {
   return houses.map(house => (
     <div className="cards">
-      <p>Name: {house.name}</p>
-      <p>Region: {house.region}</p>
-      <p>Coat of Arms: {house.coatOfArms}</p>
-      <p>Words: {house.words}</p>
-      <p>Titles: {house.titles + " "}</p>
-      <p>Seats: {house.seats + " "}</p>
-      <p>Current Lord: {house.currentLord}</p>
-      <p>Heir: {house.heir}</p>
-      <p>Over Lord: {house.overLord}</p>
-      <p>Founded: {house.founded}</p>
-      <p>Founder: {house.founder}</p>
-      <p>Died out: {house.diedOut}</p>
-      <p>Ancestral Weapons: {house.ancestralWeapons + " "}</p>
-      <p>Cadet Branches: {house.cadetBranches + " "}</p>
-      <p>Sworn Members: {house.swornMembers + " "}</p>
+      <p><span className="boldText">Name: </span> {house.name}</p>
+      <p><span className="boldText">Region:</span> {house.region}</p>
+      <p><span className="boldText">Coat of Arms:</span> {house.coatOfArms}</p>
+      <p><span className="boldText">Words: </span>{house.words}</p>
+      <p><span className="boldText">Titles:</span> {house.titles + " "}</p>
+      <p><span className="boldText">Seats: </span> {house.seats + " "}</p>
+      <p><span className="boldText">Current Lord: </span>{house.currentLord}</p>
+      <p><span className="boldText">Heir: </span> {house.heir}</p>
+      <p><span className="boldText">Over Lord:</span> {house.overLord}</p>
+      <p><span className="boldText">Founded:</span> {house.founded}</p>
+      <p><span className="boldText">Founder:</span> {house.founder}</p>
+      <p><span className="boldText">Died out:</span> {house.diedOut}</p>
+      <p><span className="boldText">Ancestral Weapons:</span> {house.ancestralWeapons + " "}</p>
+      <p><span className="boldText">Cadet Branches:</span> {house.cadetBranches + " "}</p>
+      <p><span className="boldText">Sworn Members:</span> <a href={house.swornMembers}>List of Sworn Members</a></p>
       <br />
     </div>
   ));
