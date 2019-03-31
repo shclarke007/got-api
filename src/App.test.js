@@ -1,9 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+// import { shallow } from "enzyme";
+// import { App } from "./App";
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
-});
+// describe("App component test", () => {
+//   let wrapper;
+//   beforeEach(() => {
+//     wrapper = shallow(<App />);
+//   });
+
+//   it("has a div", () => {
+//     expect(wrapper.find("div.App")).to.have.lengthOf(1);
+//   });
+// });
