@@ -1,20 +1,17 @@
 import React, { Component } from "react";
-import Characters from "./Characters";
-import Books from "./Books";
+import "./App.css";
 import Houses from "./Houses";
+import PageHeader from "./components/headers/PageHeader";
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <div>
-          <Books />
-        </div>
-        <div>
+      <div className="">
+        <header className="title">
+          <PageHeader />
+        </header>
+        <div className="houses">
           <Houses />
-        </div>
-        <div>
-          <Characters />
         </div>
       </div>
     );
