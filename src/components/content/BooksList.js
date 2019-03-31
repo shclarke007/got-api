@@ -12,7 +12,7 @@ const BooksList = ({books}) =>{
         <p>Publisher: {item.publisher}</p>
         <p>Media Type: {item.mediaType}</p>
         <p>Released: {item.released}</p>
-        <p>Characters: {item.characters}</p>
+        <p>Characters: {item.characters + ' '}</p>
         <br />
       </div>
     ))}
